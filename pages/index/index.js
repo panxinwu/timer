@@ -26,6 +26,9 @@ Page({
   },
 
   onShow: function() {
+    wx.setNavigationBarTitle({
+      title: '主页'
+    })
     if (this.data.isRuning) return
     let workTime = util.formatTime(wx.getStorageSync('workTime'), 'HH')
     let restTime = util.formatTime(wx.getStorageSync('restTime'), 'HH')
