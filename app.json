@@ -20,7 +20,7 @@
         "pagePath": "pages/index/index",
         "iconPath": "image/wechat.png",
         "selectedIconPath": "image/wechatHL.png",
-        "text": "主页"
+        "text": "开始运动"
       },
       {
         "pagePath": "pages/logs/logs",

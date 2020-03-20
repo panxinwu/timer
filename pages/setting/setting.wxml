@@ -1,6 +1,6 @@
 <view class="container">
 	<view class="section panel">
-	  <text class="section_title">工作时长(分钟)</text>
+	  <text class="section_title">运动时长(分钟)</text>
 	  <view class="section_body">
 	    <slider 
 	    	bindchange="changeWorkTime" 

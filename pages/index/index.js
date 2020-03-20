@@ -1,6 +1,6 @@
 const util = require('../../utils/util.js')
 const defaultLogName = {
-  work: '工作',
+  work: '运动',
   rest: '休息'
 }
 const actionName = {
@@ -27,7 +27,7 @@ Page({
 
   onShow: function() {
     wx.setNavigationBarTitle({
-      title: '主页'
+      title: '开始运动'
     })
     if (this.data.isRuning) return
     let workTime = util.formatTime(wx.getStorageSync('workTime'), 'HH')

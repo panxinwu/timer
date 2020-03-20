@@ -1,7 +1,7 @@
 //app.js
 let sr = require('sr-sdk-wxapp.min').init({
   appid: 'wx195745e8e342bd76', // AppID(小程序ID)
-  token: 'bi57edfce3f979464d', // token是唯一必须配置的参数，代表接入凭证，详见「init接口」
+  token: 'bic83b5b70308e4028', // token是唯一必须配置的参数，代表接入凭证，详见「init接口」
   proxyPage: true,
   debug: true,
 })
