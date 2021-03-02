@@ -3,13 +3,20 @@ Page({
   data: {
     logs: [],
     modalHidden: true,
-    toastHidden: true
+    toastHidden: true,
+    goodsInfo: {
+      price: '14.3',
+      title: '小花裙'
+    }
   },
   onShow: function() {
     wx.setNavigationBarTitle({
       title: '任务记录'
     })
     this.getLogs()
+  },
+  onShareAppMessage: function () {
+    console.log('===============log')
   },
   set: function() {
 

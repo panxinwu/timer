@@ -1,0 +1,23 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "![](./image/view.gif)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panxinwu/timer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panxinwu/timer/issues"
+  },
+  "homepage": "https://github.com/panxinwu/timer#readme",
+  "dependencies": {
+    "cos-nodejs-sdk-v5": "^2.5.20",
+    "sr-sdk-wxapp": "file:sr-sdk-wxapp"
+  }
+}

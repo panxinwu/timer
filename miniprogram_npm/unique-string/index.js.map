@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;;;AAAA;AACA;AACA;AACA;AACA","file":"index.js","sourcesContent":["\nconst cryptoRandomString = require('crypto-random-string');\n\nmodule.exports = () => cryptoRandomString(32);\n"]}

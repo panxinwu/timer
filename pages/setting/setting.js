@@ -8,6 +8,9 @@ Page({
     	restTime: wx.getStorageSync('restTime')
     })
   },
+  onShareAppMessage: function () {
+    console.log('===============set')
+  },
   changeWorkTime: function(e) {
   	wx.setStorage({
   		key: 'workTime',

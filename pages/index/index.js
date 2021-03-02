@@ -3,6 +3,8 @@ const defaultLogName = {
   work: '运动',
   rest: '休息'
 }
+var app = getApp()
+
 const actionName = {
   stop: '停止',
   start: '开始'
@@ -29,6 +31,11 @@ Page({
     wx.setNavigationBarTitle({
       title: '开始运动'
     })
+    app.gdt.track('RESERVATION',{
+      'wechat_openid': 'onthW47tiwuTs51-h51_at_VTaa0',
+      'other_key': 'other value'
+      })
+      
     if (this.data.isRuning) return
     let workTime = util.formatTime(wx.getStorageSync('workTime'), 'HH')
     let restTime = util.formatTime(wx.getStorageSync('restTime'), 'HH')
@@ -38,7 +45,17 @@ Page({
       remainTimeText: workTime + ':00'
     })
   },
-
+  onShareAppMessage: function () {
+    console.log('===============share11111')
+  },
+  onShareTimeline: function () {
+    console.log('===============share22222222')
+    return {
+      title: '转发标题',
+      imageUrl: '', // 图片 URL
+      query: 'a=1&b=2'
+    }
+  },
   startTimer: function(e) {
     let startTime = Date.now()
     let isRuning = this.data.isRuning
