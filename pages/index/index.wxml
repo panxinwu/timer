@@ -29,12 +29,16 @@
 	<view class="timer_footer">
 	  <view 
 	  	bindtap="startTimer" 
-	  	data-type="work" 
+	  	data-type="work"
+			data-track-name="2_1"
+			data-track-index="1"
 	  	class="timer_ctrl {{isRuning && timerType == 'rest' ? 'hide' : ''}}" >{{isRuning ? '完成': '运动'}}</view>
 
 	  <view 
 	  	bindtap="startTimer" 
 	  	data-type="rest" 
+			data-track-name="2_2"
+			data-track-index="2"
 	  	class="timer_ctrl {{isRuning && timerType == 'work' ? 'hide' : ''}}" >{{isRuning ? '完成': '休息'}}</view>
 	</view>
 </view>

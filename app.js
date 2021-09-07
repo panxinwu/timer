@@ -29,8 +29,10 @@ sr.init({
   // 建议开启-是否开启自动设置openID
   openAutoTrackOpenId: true,
   openAutoTrackUnionId: true,
+  useComponentXPath: true,
   // 建议开启-元素事件跟踪，自动上报元素事件，入tap、change、longpress、confirm
   autoTrack: true,
+  
 })
 
 // const gio = require("gio.min.js").default;
