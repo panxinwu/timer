@@ -1,9 +1,7 @@
 //app.js
 import sr from './sr-sdk-wxapp/index'
 // app.js
-const ald = require('./ald-stat/ald-stat.js')
 var gdt =require('./gdtevent_wx.min.js')
-console.log(gdt.init)
 sr.init({
   appid: 'wx195745e8e342bd76', // AppID(小程序ID)
   token: 'bic83b5b70308e4028', // token是唯一必须配置的参数，代表接入凭证，详见「init接口」
@@ -49,7 +47,6 @@ App({
   onLaunch: function() {
     let workTime = wx.getStorageSync('workTime')
     let restTime = wx.getStorageSync('restTime')
-    gdt.init('1111122448', 'wx195745e8e342bd76')
 
     if (!workTime) {
       wx.setStorage({
